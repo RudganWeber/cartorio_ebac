@@ -118,6 +118,7 @@ int main(){
 		printf("\t1 - registrar nomes\n");
 		printf("\t2 - consultar nomes\n");
 		printf("\t3 - deletar nomes\n");
+		printf("\t4 - Sair do programa\n\n");
 		printf("Opção:");
 	
 		scanf("%d", &opcao); //usado para guardar o que o usuário digitou 
@@ -138,6 +139,11 @@ int main(){
 			deletar();
 			break;
 			
+			case 4:
+			printf("Obrigado por utilizar o programa!\n");
+			return 0;
+			break;
+		
 			default:
 			printf("Você escolheu uma opção invalida! \n");
 			system("pause");
